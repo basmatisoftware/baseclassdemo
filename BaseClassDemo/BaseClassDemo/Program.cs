@@ -9,7 +9,7 @@ namespace BaseClassDemo
             Console.WriteLine("Base Class Demo");
 
 
-
+            Console.WriteLine("Press ANY KEY to quit.");
             Console.ReadKey();
         }
     }
