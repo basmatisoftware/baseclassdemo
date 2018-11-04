@@ -15,9 +15,10 @@ namespace BaseClassDemo
             Name = name;
             IsAlive = isAlive;
             CurrentHP = currentHP;
+            Dexterity = dexterity;
             RewardGold = rewardGold;
             RewardXP = rewardXP;
-            Dexterity = dexterity;
+           
         }
 
     }
