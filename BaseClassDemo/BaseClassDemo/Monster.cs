@@ -10,13 +10,14 @@ namespace BaseClassDemo
         public int RewardXP;
 
         //add dexterity
-        public Monster(string name, bool isAlive, int currentHP, int rewardGold, int rewardXP):base(name, isAlive, currentHP)
+        public Monster(string name, bool isAlive, int currentHP, int dexterity, int rewardGold, int rewardXP):base(name, isAlive, currentHP, dexterity)
         {
             Name = name;
             IsAlive = isAlive;
             CurrentHP = currentHP;
             RewardGold = rewardGold;
             RewardXP = rewardXP;
+            Dexterity = dexterity;
         }
 
     }
