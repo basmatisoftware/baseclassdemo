@@ -68,7 +68,6 @@ namespace BaseClassDemo
 
         }
 
-
         public static int RollDie(int max)
         {
             Random rnd = new Random();
