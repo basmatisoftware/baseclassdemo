@@ -21,17 +21,20 @@ namespace BaseClassDemo
                 DamageMonster(monster, damage);
                 if (monster.IsAlive)
                 {
+                    damage = RollDie(monster.Strength);
                     DamagePlayer(player, damage);
-                }
+                } //TODO: Monster is dead... give up rewards...
 
                 
             } else
             {
                 //Monster goes first
                 int damage = RollDie(monster.Strength);
+                //TODO:  Check if monster died... if so, give up rewards
                 DamagePlayer(player, damage);
                 if (player.IsAlive)
                 {
+                    damage = RollDie(player.Strength);
                     DamageMonster(monster, damage);
                 }
                 
