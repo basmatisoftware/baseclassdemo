@@ -21,7 +21,15 @@ namespace BaseClassDemo
             Gold = gold;
         }
 
-
+        //Methods
+        public void ReportStats()
+        {
+            Console.WriteLine("Player Name: {0}", Name);
+            Console.WriteLine("\tIs Alive:{0}", IsAlive);
+            Console.WriteLine("\tHP: {0} \tDEX:{1}", CurrentHP, Dexterity);
+            Console.WriteLine("\tHas Armor:{0}", HasArmor);
+            Console.WriteLine("\tLevel: {0}\t Gold:{1}", Level, Gold);
+        }
 
     }
 
