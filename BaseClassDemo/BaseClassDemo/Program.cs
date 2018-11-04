@@ -15,7 +15,17 @@ namespace BaseClassDemo
             Console.WriteLine();
             poohbear.ReportStats();
 
-            GameEngine.H2HPlayerBattleMonster(poohbear, targu);
+            GameEngine.battleCount = 0;
+
+            while (poohbear.IsAlive && targu.IsAlive)
+            {
+                GameEngine.H2HPlayerBattleMonster(poohbear, targu);
+                targu.ReportStats();
+                Console.WriteLine();
+                poohbear.ReportStats();
+                GameEngine.battleCount++;
+            }
+            Console.WriteLine("battleCount:{0}", GameEngine.battleCount);
 
             Console.WriteLine("Press ANY KEY to quit.");
             Console.ReadKey();
