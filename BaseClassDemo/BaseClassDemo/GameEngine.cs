@@ -46,7 +46,7 @@ namespace BaseClassDemo
 
         private static void DamageMonster(Monster monster, int damage)
         {
-            monster.CurrentHP -= damage;
+            Console.WriteLine("***{0} is hit with {1} damage.", monster.Name, damage);
             monster.CurrentHP -= damage;
             if (monster.CurrentHP < 0)
             {
@@ -58,7 +58,7 @@ namespace BaseClassDemo
 
         private static void DamagePlayer(Player player, int damage)
         {
-            player.CurrentHP -= damage;
+            Console.WriteLine("***{0} is hit with {1} damage.", player.Name, damage);
             player.CurrentHP -= damage;
             if (player.CurrentHP < 0)
             {
